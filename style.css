@@ -1,0 +1,120 @@
+body{
+    margin :0;
+    padding : 0;
+    font-family:'Times New Roman', Times, serif;
+    background-color: #f3f5b3;
+    color: #211e16;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1 {
+    margin-top: 30px;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+#Add{
+    width: 90px;
+    height: 100px;
+
+    border: 1px dashed rgb(112, 78, 78);
+    border-radius: 12px;
+
+    background-color: #ffffff;
+    color:#333;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+    
+}
+#Add:hover {
+    background-color: #dfdada;
+    border-color: #4caf50;
+}
+#Add p{
+    font-size: 19px;
+    font-weight: bold;
+    
+}
+#Add .icon-pen{
+    font-size :25px;
+    margin-bottom: 4px;
+    padding-top: 20px;
+    color: #eb6025;
+
+}
+#modalOverlay{
+    
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    height: 100vh;
+    width: 100vw;
+}
+#InputArea{
+    background: white;
+    padding:20px;
+    width:300px;
+    height: 350px;
+    border-radius:10px;
+
+    transform :scale(0.9);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+#Title {
+    all:unset;
+    border: 1px solid black;
+    display: block;
+    width:90%;
+    height: 10%;
+    font-size: 18px;
+    padding-left:5px;
+    margin-bottom: 15px;
+    border-radius:5px;
+    overflow-y: hidden;
+}
+#textArea{
+    all:unset;
+    border: 1px solid black;
+    display: block;
+    width:90%;
+    height: 65%;
+    font-size: 18px;
+    padding-left:5px;
+    padding-top:5px;
+    margin-bottom: 15px;
+    border-radius:5px;
+    overflow-wrap: break-word;
+    
+}
+#Save{
+    display:block;
+    margin-left:auto;
+    cursor: pointer;
+    font-size: 16px;
+
+}
+#Save.hover{
+    background-color: #ce2f2f ;
+}
+#modalOverlay.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+#modalOverlay.active #InputArea{
+    transform: scale(1);
+    opacity: 1;
+}
