@@ -118,3 +118,47 @@ h1 {
     transform: scale(1);
     opacity: 1;
 }
+#notesContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width:100%;
+}
+.note{
+    padding-right:0px;
+    padding-top:0px;
+    width: 170px;
+    /* height: 200px; */
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    margin: 10px;
+    background-color: #f7f7f7;
+}
+.note-title{
+    display: flex;
+    background-color: #e19090cf;
+    border-bottom:2px solid black;
+    /* border-radius: 0px; */
+    height: 30px;
+    padding-left: 10px;
+    margin: 0px 0px 0px 0px;
+    align-items: center;
+}
+.note-content{
+
+    height:140px; 
+    padding: 0px 0px 0px 5px;
+    font-size: 15px;
+    font-weight: 540;
+    overflow-wrap: break-word;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+}
+.note-buttons{
+    
+    margin: 0px 0px 0px 2px;
+    border-radius: 10px;
+    
+}
+
