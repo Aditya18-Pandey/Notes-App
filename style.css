@@ -64,7 +64,7 @@ h1 {
     width: 100vw;
 }
 #InputArea{
-    background: white;
+    background-color: whitesmoke;
     padding:20px;
     width:300px;
     height: 350px;
@@ -162,3 +162,16 @@ h1 {
     
 }
 
+#close_btn{
+    background-color:rgba(0, 0, 0, 0.831);
+    width:20px;
+    height:18px;
+    
+    margin:0px 0px 5px 0px;
+    margin-left:auto;
+    
+    
+
+    border:2px solid black;
+    border-radius: 5px;
+}
