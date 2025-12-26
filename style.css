@@ -107,8 +107,21 @@ h1 {
     font-size: 16px;
 
 }
-#Save.hover{
-    background-color: #ce2f2f ;
+#close_btn{
+    background-color:rgba(0, 0, 0, 0.831);
+    width:20px;
+    height:18px;
+    
+    margin:0px 0px 5px 0px;
+    margin-left:auto;
+    
+    cursor:pointer;
+
+    border:2px solid black;
+    border-radius: 5px;
+}
+#Save:hover{
+    background-color: #ff0000 ;
 }
 #modalOverlay.active{
     opacity: 1;
@@ -137,6 +150,8 @@ h1 {
 .note-title{
     display: flex;
     background-color: #e19090cf;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     border-bottom:2px solid black;
     /* border-radius: 0px; */
     height: 30px;
@@ -162,16 +177,92 @@ h1 {
     
 }
 
-#close_btn{
-    background-color:rgba(0, 0, 0, 0.831);
-    width:20px;
-    height:18px;
-    
-    margin:0px 0px 5px 0px;
-    margin-left:auto;
-    
-    
+#close_btn:hover{
+    background-color: #dfdada;
+}
 
-    border:2px solid black;
-    border-radius: 5px;
+#header{
+    
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100vw;
+    border: 2px solid black;
+    margin-bottom: 10px;
+}
+#theme-toggle{
+    background:none;
+    
+    display:flex;
+    align-items: center;
+ 
+    gap: 0px;
+    padding:0px;
+
+    cursor:pointer;
+    border: 2px solid black;
+    border-radius:15px;
+}
+
+#theme-toggle svg{
+    width: 30px;
+    height: 22px;    
+}
+
+.icons{
+    padding:0px 0px 0px 0px;
+    width:25px;
+    height:22px;
+    border-left: 1px solid black;
+    fill:currentColor;
+    transition: transform 0.2s ease, color 0.2s ease;
+
+}
+#light-btn {
+    color: #fbbf24;
+    
+}
+#dark-btn {
+    border-left: none;
+    color: #b9c8dc;
+}
+
+body.light{
+    background-color: #dad2d2;
+    color:#000000;
+}
+body.dark{
+    background-color: #2A2C2A;
+    color:#EDF0ED;
+}
+
+
+#light-btn.active{
+    background-color: #000000;
+    border-radius:15px;
+    border-radius:15px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    
+} 
+#dark-btn.active{
+    background-color: #000000;
+    border-radius:15px;
+    border-top-right-radius: 0px;
+    border-end-end-radius: 0px;
+}
+.icon:hover{
+    transform:scale(1.15);
+}
+
+.del_button:hover{
+    background-color: #211e16;
+    color:  #e91313;
+    cursor:pointer;
+}
+.edit_button:hover{
+    background-color: #211e16;
+    color:  #28c314;
+    cursor:pointer;
 }

@@ -2,10 +2,33 @@
 const notes =JSON.parse(localStorage.getItem('notes')) || [];
 
 const ModalOverlay = document.querySelector('#modalOverlay');
-const addbtn = document.querySelector("#Add")
-const Savebtn = document.querySelector("#Save")
-const close_btnn = document.querySelector('#close_btn')
+const addbtn = document.querySelector("#Add");
+const Savebtn = document.querySelector("#Save");
+const close_btnn = document.querySelector('#close_btn');
+const sunIcon = document.querySelector("#light-btn");
+const moonIcon = document.querySelector("#dark-btn");
+const body = document.body;
+
 let editIndex = null;
+
+//light mode Logic --->
+sunIcon.addEventListener('click', ()=>{
+    body.classList.remove('dark');
+    body.classList.add('light');
+    
+    sunIcon.classList.add('active');
+    moonIcon.classList.remove('active');
+});
+
+//dark mode Logic --->
+moonIcon.addEventListener('click', ()=>{
+    body.classList.remove('light');
+    body.classList.add('dark');
+    
+    moonIcon.classList.add('active');
+    sunIcon.classList.remove('active');
+});
+
 
 addbtn.addEventListener('click',function(){
     ModalOverlay.classList.add('active');
